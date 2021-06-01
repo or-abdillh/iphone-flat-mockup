@@ -1,0 +1,96 @@
+:root {
+  --bg-primer : #F3F3F3;
+  --bg-wallpaper: linear-gradient(to bottom, #CC2B5E, #753A88 70%);
+  --border-power: 0 .5rem .5rem 0;
+  --border-any: .5rem 0 0 .5rem;
+}
+body {
+  font-size: 16px;
+  background-color: var(--bg-primer);
+}
+.screen {
+  width: 65vw;
+  height: 70vh;
+  background: url(Screenshot_2021-04-11-16-18-26-471_com.miui.home.jpg) no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  margin: 3rem auto;
+  border-radius: 1.5rem;
+  border: .5rem solid white;
+  position: relative;
+  box-shadow: 13px 13px 12px #BCBCBCC4, 
+              -8px -8px 12px #E0E0E0AB;
+}
+.screen::after {
+  display: block;
+  content: " ";
+  width: 40%;
+  height: .2rem;
+  background-color: white;
+  position: absolute;
+  bottom: .5rem;
+  left: 30%;
+  border-radius: 1.5rem;
+}
+.notch {
+  width: 75%;
+  height: 1.75rem;
+  background-color: white;
+  border-radius: 0 0 1.15rem 1.15rem;
+  position: absolute;
+  top: -.5rem;
+  left: 12.5%;
+}
+.notch::after, .notch::before {
+  display: block;
+  content: " ";
+  position: absolute;
+}
+.notch::before {
+  width: 20%;
+  height: .3rem;
+  background-color: #F6EFEFB5;
+  border-radius: .3rem;
+  left: 4rem;
+  top: .8rem;
+}
+.notch::after {
+  width: .5rem;
+  height: .5rem;
+  background-color: #D5C9C9B5;
+  border-radius: 50%;
+  right: 4rem;
+  top: .7rem;
+}
+.button {
+  width: .45rem;
+  background-color: white;
+}
+.button-power {
+  height: 4rem;
+  border-radius: var(--border-power);
+  position: absolute;
+  right: -.8rem;
+  top: 6rem;
+}
+.button-ring {
+  height: 2rem;
+  width: .35rem;
+  border-radius: var(--border-any);
+  position: absolute;
+  left: -.8rem;
+  top: 2.5rem;
+}
+.volume-up, .volume-down {
+  height: 3rem;
+  width: .35rem;
+  border-radius: var(--border-any);
+  position: absolute;
+  left: -.8rem;
+}
+.volume-up {
+  top: 6rem;
+}
+.volume-down {
+  top: 9.5rem;
+}
